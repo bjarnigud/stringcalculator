@@ -47,7 +47,7 @@ public class CalculatorTest {
 
         }catch (Exception e) {
 
-            assertEquals("-4,-5", e.getMessage());
+            assertEquals("Negatives not allowed:-4,-5", e.getMessage());
         }
     }
 
@@ -56,4 +56,3 @@ public class CalculatorTest {
         assertEquals(2,Calculator.add("1001,2"));
 
     }
-}
