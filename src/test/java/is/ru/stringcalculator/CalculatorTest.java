@@ -33,4 +33,20 @@ public class CalculatorTest {
     public void newlineTest(){
         assertEquals(6, Calculator.add("1\n2,3"));
     }
+
+    @Test 
+    public void delimiterTest(){
+        assertEquals(6, Calculator.add("//;1;2;3"));
+    }
+/*
+    @Test 
+    public void negativenumberTest(){
+
+        try {
+            calculator.add("-1");
+            fail();
+        }catch (Exeption e) {
+        }
+    }
+*/
 }
