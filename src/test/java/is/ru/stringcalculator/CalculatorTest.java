@@ -38,15 +38,16 @@ public class CalculatorTest {
     public void delimiterTest(){
         assertEquals(6, Calculator.add("//;1;2;3"));
     }
-/*
+    
     @Test 
     public void negativenumberTest(){
 
         try {
-            calculator.add("-1");
-            fail();
-        }catch (Exeption e) {
+            Calculator.add("2,-4,3,-5");
+
+        }catch (Exception e) {
+
+            assertEquals("-4,-5", e.getMessage());
         }
     }
-*/
 }
